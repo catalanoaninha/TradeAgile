@@ -1,0 +1,91 @@
+body {
+  background-image: url("./images/fundo2.jpg");
+  font-family: "Roboto Light";
+  display: grid;
+  height: 100%;
+  place-items: center;
+  color: white;
+
+}
+
+
+button {
+font-family:"Roboto Light";
+font-size:24px;
+border-radius:13px;
+padding-left:50px;
+padding-right:50px;
+padding-top:3px;
+padding-bottom:5px;
+color:#ffffff;
+background-color:#1e5e8b;
+outline:none;
+border:none;
+cursor:pointer;
+display:inline-block;
+text-decoration: none;
+transition: .4s;
+}
+
+button:hover {
+color:#ffffff;
+background-color: #182633;
+}
+
+.link {
+font-family: "Roboto Light";
+color: #ffffff;
+font-size:24px;
+border-radius:13px;
+padding-left:50px;
+padding-right:50px;
+padding-top:3px;
+padding-bottom:5px;
+color:#ffffff;
+background-color:#1e5e8b;
+outline:none;
+border:none;
+cursor:pointer;
+text-decoration: none;
+transition: .4s;
+display:inline-block;
+align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+color:#ffffff;
+background-color: #182633;
+}
+
+form {
+display: grid;
+justify-content: center;
+align-items: center;
+  color: white;
+}
+
+h1 {
+color: black;
+text-align: center;
+font-size: 45px;
+}
+
+input {
+  color: #aca4a4;
+  font-family: 'Roboto Light';
+  font-size: 17px;
+  border-radius: 6px;
+  line-height: 20px;
+  background-color: white;
+  border: 1px solid #D2D2D2;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+
+}
+

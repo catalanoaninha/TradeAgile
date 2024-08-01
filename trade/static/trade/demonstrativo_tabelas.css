@@ -1,0 +1,59 @@
+body{
+    background-image: url("./images/fundo.png");
+    font-family: "Roboto Light";
+}
+
+#tudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#config-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+#caixa{
+    background: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 12px;
+    border:2px solid black;
+}
+
+.colunas-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.link {
+color: #ffffff;
+font-size:24px;
+border-radius:13px;
+padding-left:50px;
+padding-right:50px;
+padding-top:3px;
+padding-bottom:5px;;
+background-color:#1e5e8b;
+outline:none;
+border:none;
+cursor:pointer;
+text-decoration: none;
+transition: .4s;
+display:inline-block;
+align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+color:#ffffff;
+background-color: #182633;
+}

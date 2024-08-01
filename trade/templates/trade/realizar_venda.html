@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Realizar Venda</title>
+    <link rel="stylesheet" type="text/css"  href="{% static 'trade/venda.css' %}">
+</head>
+<body>
+<center>
+<br><br><br><br><br><br>
+    <h1>Realizar Venda</h1>
+    <div class="caixa">
+
+        <form method="post"><div id="config-flex">
+            {% csrf_token %}
+            <label for="cliente" id="c">Cliente:</label>
+            <select id="cliente" name="cliente" class="cli">
+                {% for cliente in clientes %}
+                <option value="{{ cliente.idcli }}">{{ cliente.nomecli }}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto" class="cli">
+                {% for produto in produtos %}
+                <option value="{{ produto.idprod }}">{{ produto.descprod }}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" class="clt">
+            <br>
+            <a href="{% url 'venda_concluida' %}"><button type="submit" class="botao_venda">Realizar Venda</button></a></div>
+        </form>
+    </div>
+<br>
+    <a href="{% url 'home' %}" class="voltar">Voltar para Home</a>
+</center>
+</body>
+</html>

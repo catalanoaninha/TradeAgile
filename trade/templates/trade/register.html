@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'trade/register.css' %}">
+
+</head>
+<body>
+    <div>
+        <br> <br> <br>           <br> <br> <br>        <br>
+     <br> <br> <br>
+
+        <h2>Registro</h2>
+        <form method="post">
+            {% csrf_token %} <!--Parte de segurança obrigatória do formulário-->
+            {{ form.as_p }} <!--Formato do formulário como parágrafo-->
+            <button type="submit">Registrar</button> <!--Botão para enviar o formulário e registrar-->
+        </form>
+        <p>Já possui uma conta? <a href="{% url 'login' %}">Faça o login</a>.</p>
+    </div>
+</body>
+</html>

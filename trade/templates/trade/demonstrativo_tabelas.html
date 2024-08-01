@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Demonstrativo das Tabelas</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'trade/demonstrativo_tabelas.css' %}">
+</head>
+<body>
+<div id="tudo">
+    <center><h1>Demonstrativo das Tabelas</h1></center>
+    <br>
+    <div id="caixa">
+        <div id="config-flex">
+            <div class="colunas-flex">
+                <h2>Clientes</h2>
+                <ul>
+                    {% for cliente in clientes %}
+                        <li>{{ cliente.nomecli }} - {{ cliente.codcli }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="colunas-flex">
+                <h2>Fornecedores</h2>
+                <ul>
+                    {% for fornecedor in fornecedores %}
+                        <li>{{ fornecedor.nomeforn }} - {{ fornecedor.codiforn }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="colunas-flex">
+                <h2>Produtos</h2>
+                <ul>
+                    {% for produto in produtos %}
+                        <li>{{ produto.descprod }} - {{ produto.codiprod }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="colunas-flex">
+                <h2>Vendas</h2>
+                <ul>
+                    {% for venda in vendas %}
+                        <li>{{ venda.codivend }} - {{ venda.valorvend }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <center><a href="{% url 'home' %}" class="link">Voltar para Home</a></center>
+</div>
+</body>
+</html>

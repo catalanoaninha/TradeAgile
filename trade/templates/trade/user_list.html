@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Ususários</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'trade/css/user_list.css' %}">
+</head>
+<body>
+    <div id="tudo">
+        <h2>Lista de Usuários</h2>
+        <br>
+        <table class="config-t"> <!--Abre tabela-->
+            <thead> <!--Header da tabela-->
+                <tr> <!--Container para linhas-->
+                    <th>ID</th> <!--Linhas de "nome"-->
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Data de Registro</th>
+                </tr>
+            </thead>
+            <tbody> <!--Corpo da tabela-->
+                {% for user in users %} <!--Percorre os usuários para printar os dados-->
+                <tr> <!--Container para linhas-->
+                    <th>{{ user.id }}</th> <!--Linhas que puxam os dados-->
+                    <th>{{ user.username }}</th>
+                    <th>{{ user.email }}</th>
+                    <th>{{ user.date_joined }}</th>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table> <!--Fecha tabela-->
+    <br><br>
+    <a href="{% url 'home' %}">Voltar</a> <!--Botão para voltar para a tela welcome-->
+    </div>
+</body>
+</html>

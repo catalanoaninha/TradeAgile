@@ -1,0 +1,56 @@
+body{
+    background-image: url('./images/Pet_Pallet2.png');
+}
+
+h1{
+    text-align: center;
+    color: #ffde59;
+    font-family: "Roboto Light";
+    font-size: 60px;
+}
+
+.button {
+
+font-family:"Roboto Light";
+
+font-size:30px;
+
+border-radius:4px;
+
+padding-left:10px;
+
+padding-right:10px;
+
+padding-top:5px;
+
+padding-bottom:5px;
+
+color:#ffde4c;
+
+background-color:#9EB9CC;
+
+outline:none;
+
+border:none;
+
+cursor:pointer;
+
+display:inline-block;
+
+text-decoration: #007bff;
+
+transition: .1s;
+
+
+}
+
+.button:hover {
+color:#ffde59;
+
+background-color:#b8b8b8;
+
+}
+
+.buttons{
+    text-align: center;
+}

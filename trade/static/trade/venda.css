@@ -1,0 +1,94 @@
+h1{
+    font-family: "Roboto Light";
+    color: #004AAD;
+}
+html,body{
+    background-size: 100%;
+    margin-left:0px ;
+    margin-top: 0px;
+    display: grid;
+    height: 100%;
+    font: 20px "Roboto Light";
+    background-image:url("./Images/fundo 3.png");
+
+
+}
+.cli{
+    height: 25px;
+    border-radius: 6px;
+}
+.clt{
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+#config-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.botao_venda{
+font-family:Arial, Helvetica, sans-serif;
+font-size:19px;
+border-radius:5px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+color:#FFFFFF;
+background-color:#004AAD;
+outline:none;
+border:none;
+cursor:pointer;
+display:inline-block;
+text-decoration: none;
+transition: .4s;
+}
+.botao_venda:hover {
+color:#000000;
+
+
+
+.voltar{
+color: #FFFFFF;
+font-size:24px;
+border-radius:13px;
+padding-left:50px;
+padding-right:50px;
+padding-top:3px;
+padding-bottom:5px;
+background-color:#1E5E8B;
+outline:none;
+border:none;
+cursor:pointer;
+text-decoration: none;
+transition: .4s;
+display:inline-block;
+align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.voltar:hover {
+color:#ffffff;
+background-color: #182633;
+}
+
+background-color:#FFDE59;
+
+}
+
+.caixa{
+    border-radius: 10px;
+    background: #FFFFFF;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border: 2px solid black;
+}
+.back{
+    color: #004AAD;
+}

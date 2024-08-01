@@ -1,0 +1,39 @@
+body {
+    background-image: url('../images/Obrigado.jpg');
+    align-items: center;
+}
+
+.link {
+font-family: "Roboto Light";
+color: #ffffff;
+font-size:24px;
+border-radius:13px;
+padding-left:50px;
+padding-right:50px;
+padding-top:3px;
+padding-bottom:5px;
+color:#ffffff;
+background-color:#1e5e8b;
+outline:none;
+border:none;
+cursor:pointer;
+text-decoration: none;
+transition: .4s;
+display:inline-block;
+align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+color:#ffffff;
+background-color: #182633;
+}
+
+#config-flex{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>Trade.Agile - Home</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'trade/home.css' %}">
+</head>
+<body>
+    <h1>Bem-vindo à Pet Pallet</h1>
+    <br><br><br>
+    <div class="buttons">
+        <a class="button" href= "{% url 'cadastro_clientes' %}">Cadastro de Clientes</a>
+        <a class="button" href="{% url 'demonstrativo_tabelas' %}">Demonstrativo das Tabelas</a>
+        <a class="button" href="{% url 'galeria_produtos' %}">Galeria de Produtos</a>
+        <a class="button" href="{% url 'realizar_venda' %}">Realizar Venda</a>
+    </div>
+</body>
+</html>
